@@ -1,3 +1,10 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Han Yeeun
+  ID: s3912055
+  Acknowledgement: Acknowledge the resources that you use here. */
 body{
     background-color: #FFFAF5;
 }
@@ -214,6 +221,9 @@ textarea{
     font-family: "Suisse Works Bold";
 }
 /* button */
+.contact_btn{
+    justify-content: center;
+}
 #contact_btn_submit{
     background-color: #FB5940;
     color: white;
@@ -269,23 +279,6 @@ textarea{
         padding: 0;
         width: 100%;
         margin: 0;
-    }
-    #purpose{
-        width: 90%;
-    }
-
-    #namebox{
-        display: flex;
-        flex-direction: column;
-    }
-    #namebox input{
-        width: 100%;
-    }
-    
-    #emailphone input{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
     }
 
     #textcontainer{
