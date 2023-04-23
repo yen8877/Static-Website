@@ -1,0 +1,52 @@
+main {
+	margin: 100px 12%;
+}
+
+.book-wrap{
+	display: flex;
+    flex-basis: 45%;
+}
+
+h3 {
+	margin-top: 0;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+.book-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	float: left;
+}
+
+.book {
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	width: 200px;
+}
+
+.book img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+}
+
+.book h5 {
+	margin-top: 0;
+	font-size: 15px;
+    font-family: "Suisse Works Bold";
+}
+.book h5:hover{
+	color: rgba(0, 0, 0, 0.466);
+}
+
+@media screen and (max-width=760px){
+	.book-container {
+		display: flex;
+		flex-direction: column;
+	}
+}

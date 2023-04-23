@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBILO</title>
+    <link rel="stylesheet" href="../css/header.footer.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+    <script src="../js/header.js" defer></script>
+</head>
+<body>
+    <div id="body_wrap">
+        <!-- header -->
+      <header>
+        <nav class="header_nav">
+          <div class="nav_wrap1">
+            <div class="logo">
+              <a href="/index.html"><img src="../assets/image/BIBILO2.png" alt="BIBILO LOGO"></a>
+            </div>
+            <ul class="navbar_menu">
+              <li><a href="/index.html">HOME</a></li>
+              <li><a href="/ChildrenCategory/CHILDREN.html">CHILDREN</a></li>
+              <li><a href="/FictionCategory/FICTION.html">FICTION</a></li>
+              <li><a href="/Nonfiction Category/NONFICTION.html">NONFICTION</a></li>
+            </ul>
+          </div>
+          <div class="nav_wrap2">
+            <div class="search_box">
+              <form action="." method="post">
+                <input class="search_txt" type="text" placeholder="Search">
+                <button class="search_btn" type="submit"><img src="../assets/image/icons8-수색-23.png" alt="search button"></button>
+              </form>
+            </div>
+            <ul class="icons">
+              <li><a href="#"><img class="profile" src="../assets/image/icons8-원-사용자-남성-40.png" alt="profile icon"></a></li>
+              <li><a href="#" class="cart"><img src="../assets/image/icons8-쇼핑-카트-40.png" alt="cart icon"></a></li>
+            </ul>
+          </div>
+          <a href="#" class="navbar_toglebtn">
+            <img class="navbar_toglebtn" src="../assets/image/icons8-menu-rounded-30.png" alt="menu">
+          </a>
+      </nav>
+      </header>
+
+      <!-- contact form -->
+      <div class="website_container">
+        <img src="../assets/image/contactusbook.jpg" alt="Book">
+        <div class="contactform">
+        <p id="contact_title">CONTACT US</p>
+        <form action="" class="contactform_container">
+            <label for="CONTACT PURPOSE">CONTACT PURPOSE</label>
+            <select name="purpose" id="purpose">
+              <option value="buy">I WANT TO BUY BOOKS</option>
+              <option value="sell">I WANT TO SELL BOOKS</option>
+            </select>
+            <br>
+            <div id="namebox">
+                <label for="">NAME </label>
+                <input type="text" id="name" name="name" placeholder=" NAME">
+            </div>
+            <div id="emailphone">
+                <label for="">EMAIL</label>
+                <input type="text" id="email" name="email" placeholder=" EMAIL">
+                <label for="">PHONE</label>
+                <input type="text" id="phone" name="phone" placeholder=" PHONE NUMBER">
+            </div>
+            <div class="contact_checkbox">
+                <p>CONTACT PREFERENCE</p>
+                <input type="checkbox" id="email_checkbox" name="email_checkbox" value="email">
+                <label id="email" for="email_checkbox">EMAIL</label><br>
+                <input type="checkbox" id="phone_checkbox" name="phone_checkbox" value="phone">
+                <label id="phone" for="phone_checkbox">PHONE</label>
+            </div>
+            <div class="contact_checkbox">
+                <p>RECEIVE WEEKLY NEWSLETTER</p>
+                <input type="radio" id="weeklyradio" name="y/n" value="email" checked="checked">
+                <label id="yesbox" for="yesbox">YES</label><br>
+                <input type="radio" id="weeklyradio" name="y/n" value="phone">
+                <label id="nobox" for="nobox">NO</label>
+            </div>
+            <div id="textcontainer">
+                <p>NOTE</p>
+                <textarea name="note" id="contact_note" cols="30" rows="10"></textarea>
+            <br><br>
+            </div>
+            <div class = contact_btn>
+                <button id="contact_btn_submit">SUBMIT</button>
+                <button id="contact_btn_reset" type="RESET" value="RESET">RESET</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <nav class="footer_nav">
+        <ul class="fnavbar_menu">
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">PRIVACY POLICY</a></li>
+          <li><a href="">TERMS</a></li>
+          <li><a href="">COPYRIGHT</a></li>
+          <li><a href="/html/contactus.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    <div class="footer_cinfo">
+      <p>CEO : HAN </p> <p> BIN NO. 097-83-89795</p> <p>© BIBILO Co. all rights reserved</p>
+    </div>
+    </footer>
+</body>
+</html>

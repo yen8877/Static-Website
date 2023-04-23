@@ -1,0 +1,130 @@
+
+.bookdetail_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 100px 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.book{
+    width: 400px;
+    height: 600px;
+}
+.book_info > .booktitle > .author, h1, .fee{
+    font-family: "Suisse Works Bold";
+    font-weight: 600;
+}
+.book_info > .edition{
+    font-family: "Suisse Works Bold";
+    color: #9D9D9D;
+    font-weight: 300;
+}
+.author{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.book_info_wrap{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+/*small imgs  */
+.small_img_box{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.small_img_box img{
+    width: 100px;
+    height: 130px;
+    margin: 5px;
+}
+
+/* buttons */
+#bookdetail_btn1{
+    background-color: #FB5940;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 450px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#bookdetail_btn2, #bookdetail_btn3{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    width: 450px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+}   
+#bookdetail_btn1:before, #bookdetail_btn2:before, #bookdetail_btn3:before {
+    height: 0%;
+    width: 2px;
+  }
+#bookdetail_btn1:hover, #bookdetail_btn2:hover, #bookdetail_btn3:hover {
+    box-shadow:  1px 2px 3px 0 rgba(255,255,255,.5),
+                -1px -2px 3px 0 rgba(116, 125, 136, .5), 
+      inset -1px -1px 3px 0 rgba(255,255,255,.2),
+      inset 1px 1px 3px 0 rgba(0, 0, 0, .4);
+  }
+
+/* book description */
+.book_description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+#description_title{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline 3px solid black;
+    
+}
+#description_note{
+    font-size: 12px;
+    width: 100%;
+}
+
+/* mobile */
+@media screen and (max-width:768px){
+    .bookdetail_wrap{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .book{
+        width: 300px;
+        height: 500px;
+    }
+    .small_img_box{
+       justify-content: center;
+    }
+
+    .book_description{
+        margin: 50px 15px;
+    }
+
+    .bookdetail_btn_wrap{
+        width: 100%;
+
+    }
+}

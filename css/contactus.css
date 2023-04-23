@@ -1,0 +1,199 @@
+body{
+    background-color: #FFFAF5;
+}
+
+.website_container{
+    display: flex;
+    min-width: min-content;
+    margin-top: 30px;
+}
+.website_container > img{
+    width: 430px;
+    height: 590px;
+    margin-left: 15%;
+}
+
+.contactform{
+    width: 670px;
+    height: 570px;
+    min-width: 500px;
+    margin-right: 15%;
+    background-color: white;
+    padding-bottom: 20px;
+}
+#contact_title{
+    font-family: "Suisse Works Bold";
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 30px ;
+}
+
+.contactform_container{
+    margin-top: 30px;
+    margin-left: 33px ;
+    margin-right: 33px ;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contactform_container > div> label, .contactform_container > label{
+    font-family: "Suisse Works Bold";
+}
+
+#purpose{
+    width: 200px;
+    height: 23px;
+}
+
+#namebox{
+    display: flex;
+    margin-top:25px;
+}
+#namebox>input{
+    width: 86%;
+    height: 23px;
+}
+#namebox label{
+    margin-right: 10px;
+}
+#emailphone{
+    margin-top: 10px;
+}
+#emailphone>input{
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 23px;
+}
+
+.contact_checkbox{
+    display: flex;
+    margin-top: 10px;
+}
+.contact_checkbox > p{
+    margin-right: 35px;
+    font-family: "Suisse Works Bold";
+}
+.contact_checkbox > label{
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+#email, #phone, #yesbox, #nobox{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#textcontainer{
+    display: flex;
+    margin-top: 25px;
+}
+#textcontainer>p{
+    margin-right: 10px;
+    font-family: "Suisse Works Bold"
+}
+textarea{
+    width: 90%;
+    height: 120px;
+    resize: none;
+}
+
+.contact_btn{
+    margin: 25px 15%;
+   min-width: 200px;
+}
+/* button */
+#contact_btn_submit{
+    background-color: #FB5940;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 110%;
+    height: 40px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#contact_btn_submit:before {
+    height: 0%;
+    width: 2px;
+  }
+#contact_btn_submit:hover {
+    box-shadow:  1px 2px 3px 0 rgba(255,255,255,.5),
+                -1px -2px 3px 0 rgba(116, 125, 136, .5), 
+      inset -1px -1px 3px 0 rgba(255,255,255,.2),
+      inset 1px 1px 3px 0 rgba(0, 0, 0, .4);
+  }
+
+#contact_btn_reset{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    width: 110%;
+    height: 40px;
+    font-weight: 900;
+    font-size: 18px;
+}
+#contact_btn_reset:before {
+    height: 0%;
+    width: 2px;
+  }
+#contact_btn_reset:hover {
+    box-shadow:  1px 2px 3px 0 rgba(255,255,255,.5),
+                -1px -2px 3px 0 rgba(116, 125, 136, .5), 
+      inset -1px -1px 3px 0 rgba(255,255,255,.2),
+      inset 1px 1px 3px 0 rgba(0, 0, 0, .4);
+  }
+
+  @media screen and (max-width:768px) {
+    body{
+        background-color: white;
+    }
+    .website_container img{
+        display: none;
+    }
+    .website_container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #purpose{
+        width: 90%;
+    }
+
+    #namebox{
+        display: flex;
+        flex-direction: column;
+    }
+    #namebox input{
+        width: 100%;
+    }
+    
+    #emailphone input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #textcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    #textcontainer textarea{
+        width: 100%;
+    }
+
+    .contactform{
+        width: 100%;
+        height: 100%;
+    }
+    .contact_checkbox label{
+        margin: 0;
+    }
+    .contact_checkbox input{
+        margin: 5px;
+    }
+  }

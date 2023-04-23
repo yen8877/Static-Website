@@ -1,0 +1,67 @@
+main {
+	padding: 20px
+}
+section{
+	flex: inline-block;
+	flex-wrap: wrap;
+}
+
+.Subcategory1{
+    flex-basis: 45%;
+	margin: 10px;
+    flex-basis: 45%;
+    margin-top: 80px;
+}
+
+.Subcategory2, .Subcategory3 {
+	flex-basis: 45%;
+	margin: 10px;
+    flex-basis: 45%;
+    margin-top: 120px;
+}
+.Subcategory3{
+    margin-bottom: 100px;
+}
+
+h3 {
+	margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h3:hover{
+	color: rgba(0, 0, 0, 0.466);
+}
+
+.book-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: -10px;
+	padding: 10px;
+}
+
+
+.book {
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	width: 200px;
+}
+
+.book img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+}
+
+.book h5 {
+	margin-top: 0;
+	font-size: 15px;
+    font-family: "Suisse Works Bold";
+}
+
+.book h5:hover{
+	color: rgba(0, 0, 0, 0.466);
+}

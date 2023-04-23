@@ -1,0 +1,26 @@
+body{
+    background-color: #FFFAF5;
+}
+
+video{
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+
+.bannervideo{
+    position: relative;
+    padding: 0;
+    line-height: 1;
+}
+
+.banner_txt_container{
+    position: absolute;
+    top: 40%;
+}
+
+.banner_txt_container p{
+    font-family: "Suisse Works Bold";
+    font-size : clamp(2rem, 11vw, 9rem);
+    color: rgba(255, 242, 227, 0.695);
+}

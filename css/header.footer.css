@@ -1,0 +1,243 @@
+/* basic style */
+@import url(//db.onlinewebfonts.com/c/27cb2381f8e348c531e19a16b9921082?family=Suisse+Works+Bold);
+@font-face {font-family: "Suisse Works Bold"; 
+    src: url("//db.onlinewebfonts.com/t/27cb2381f8e348c531e19a16b9921082.eot"); 
+    src: url("//db.onlinewebfonts.com/t/27cb2381f8e348c531e19a16b9921082.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/27cb2381f8e348c531e19a16b9921082.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/27cb2381f8e348c531e19a16b9921082.woff") 
+    format("woff"), 
+    url("//db.onlinewebfonts.com/t/27cb2381f8e348c531e19a16b9921082.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/27cb2381f8e348c531e19a16b9921082.svg#Suisse Works Bold") 
+    format("svg"); }
+    
+*{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#body_wrap{
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 130px;
+}
+
+
+/* header */
+header{
+    background: white;
+    width: 100%;   
+    height: 100%;
+    color: #334F42;
+}
+
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.navbar_toglebtn{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 18px;
+}
+
+.nav_wrap1{
+    display: flex;
+}
+.nav_wrap2{
+    display: flex;
+}
+
+.logo img{
+    width: 150px;
+    height: 110px;
+}
+
+.navbar_menu{
+    display: flex;
+    margin-left: 0;
+}
+
+.navbar_menu li{
+    padding: 65px 10px 5px;
+}
+
+.navbar_menu li a{
+    position: relative;
+    color: #334F42;
+    font-weight: 500;
+}
+
+.navbar_menu li a::after{
+    position:absolute; 
+    bottom: 0; left: 0; display: block; 
+    content: ''; 
+    width: 100%; 
+    border-bottom: 3px solid #334F42; 
+    height: 1px; 
+    transform: translateY(-15px); 
+    opacity: 0; 
+    transition: all 0.5s;
+}
+.navbar_menu li a:hover::after{
+    opacity: 1; 
+    transform: translateY(3px);
+}
+
+.search_box {
+    display:flex;
+    height: 30px;
+    width: 300px;
+    border-bottom: 1px solid #69676459;
+    margin: 70px 30px 0px 5px;
+}
+
+.search_txt{
+    font-size: 14px;
+    border: none;
+    width: 250px;
+    height: 28px;
+}
+.search_txt::-webkit-input-placeholder{color: #00000035;}
+.search_btn {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.icons{
+    display: flex;
+}
+.icons li{
+    padding: 60px 10px 20px;
+}
+
+@media screen and (max-width:768px){
+    .header_nav{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .nav_wrap1{
+        flex-direction:column ;
+        width: 100%;
+    }
+    .nav_wrap1 > .navbar_menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .nav_wrap1 > .navbar_menu > li{
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .nav_wrap2{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 30px;
+    }
+    
+    .navbar_toglebtn{
+        display: block;
+    }
+    
+    .navbar_menu.active, .nav_wrap2.active{
+        display: flex;
+        background: white;
+    }
+    }
+
+/* footer */
+footer{
+    position: relative;
+    transform : translateY(-100%);
+    background-color: #ECE6D0;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    color: #334F42;
+}
+.fnavbar_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+.fnavbar_menu li{
+    padding: 30px 10px 5px;
+}
+
+.fnavbar_menu a{
+    color: #334F42;
+}
+.footer_nav a:hover{
+    color: #334f4298;
+}
+.footer_cinfo {
+    display: flex;
+    justify-content: center;
+    font-size: 5px;
+    margin-top: 50px;
+}
+.footer_cinfo p{
+    color: #334F42;
+    margin-left: 25px;
+}
+
+@media screen and (max-width:768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 350px;
+        margin-top: 200px;
+    }
+    .fnavbar_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px;
+    }
+    .fnavbar_menu li{
+        padding: 10px;
+    }
+
+    .footer_cinfo{
+        margin-top: 20px;
+    }
+}

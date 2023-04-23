@@ -1,0 +1,45 @@
+#breadcrumb_wrap {
+    margin: 30px 80px 20px;
+  }
+  
+  .cd-breadcrumb li{
+    display: inline-block;
+    float: left;
+    margin: 8px 0;
+  }
+  .cd-breadcrumb li::after{
+    display: inline-block;
+    content: '\00bb';
+    margin: 2px;
+  }
+  .cd-breadcrumb li:last-of-type::after{
+    display: none;
+  }
+  .cd-breadcrumb li > *{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(142, 142, 142);
+  }
+  .cd-breadcrumb li.current > *{
+    color: #FB5940;
+  }
+.cd-breadcrumb a:hover{
+    color: #000000;
+  }
+
+  .cd-breadcrumb.custom-separator li::after{
+    content: '';
+    height: 16px;
+    width: 16px;
+    background: url(https://codyhouse.co/demo/breadcrumbs-multi-steps-indicator/img/cd-custom-separator.svg) no-repeat center center;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width:768px){
+    section{
+      margin: 10px;
+      
+    }
+  
+}
