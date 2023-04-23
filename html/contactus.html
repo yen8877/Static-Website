@@ -14,9 +14,12 @@
         <header>
           <nav class="header_nav">
             <div class="nav_wrap1">
+              <!-- logo -->
               <div class="logo">
                 <a href="../index.html"><img src="../assets/image/BIBILO2.png" alt="BIBILO LOGO"></a>
               </div>
+
+              <!-- menu -->
               <ul class="navbar_menu">
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="../ChildrenCategory/CHILDREN.html">CHILDREN</a></li>
@@ -24,6 +27,7 @@
                 <li><a href="../Nonfiction Category/NONFICTION.html">NONFICTION</a></li>
               </ul>
             </div>
+            <!-- seach, cart icons -->
             <div class="nav_wrap2">
               <div class="search_box">
                 <form action="." method="post">
@@ -36,9 +40,6 @@
                 <li><a href="#" class="cart"><img src="../assets/image/icons8-쇼핑-카트-40.png" alt="cart icon"></a></li>
               </ul>
             </div>
-            <a href="#" class="navbar_toglebtn">
-              <img class="navbar_toglebtn" src="../assets/image/icons8-menu-rounded-30.png" alt="menu">
-            </a>
         </nav>
         </header>
 
@@ -47,6 +48,8 @@
         <img src="../assets/image/contactusbook.jpg" alt="Book">
         <div class="contactform">
         <p id="contact_title">CONTACT US</p>
+        
+      
         <form action="" class="contactform_container">
             <label for="CONTACT PURPOSE">CONTACT PURPOSE</label>
             <select name="purpose" id="purpose">
@@ -54,7 +57,7 @@
               <option value="sell">I WANT TO SELL BOOKS</option>
             </select>
             <br>
-            <div id="namebox">
+            <!-- <div id="namebox">
                 <label for="">NAME </label>
                 <input type="text" id="name" name="name" placeholder=" NAME">
             </div>
@@ -63,13 +66,44 @@
                 <input type="text" id="email" name="email" placeholder=" EMAIL">
                 <label for="">PHONE</label>
                 <input type="text" id="phone" name="phone" placeholder=" PHONE NUMBER">
+            </div> -->
+
+            <p id="p-info">PERSONAL INFORMATION</p>
+            <div class="input-container icon1">
+              <input id="firstname" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Name</label>
             </div>
-            <div class="contact_checkbox">
-                <p>CONTACT PREFERENCE</p>
-                <input type="checkbox" id="email_checkbox" name="email_checkbox" value="email">
+    
+            <div class="input-container icon1">
+              <input id="firstname" class="input" type="email" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Email</label>
+            </div>
+    
+            <div class="input-container icon1">
+              <input id="firstname" class="input" type="number" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Phone</label>
+            </div>
+            <div class="contact_checkbox1">
+                <p id="preference">CONTACT PREFERENCE</p>
+                <!-- <input type="checkbox" id="email_checkbox" name="email_checkbox" value="email">
                 <label id="email" for="email_checkbox">EMAIL</label><br>
                 <input type="checkbox" id="phone_checkbox" name="phone_checkbox" value="phone">
-                <label id="phone" for="phone_checkbox">PHONE</label>
+                <label id="phone" for="phone_checkbox">PHONE</label> -->
+                <fieldset>
+                  <label>
+                    <input class="cb cb1" type="checkbox" name="social" />
+                    <i></i>
+                    <span>By Phone</span>
+                  </label>
+                  <label>
+                    <input class="cb cb2" type="checkbox" name="work" />
+                    <i></i>
+                    <span>By Email</span>
+                  </label>
+                </fieldset>
             </div>
             <div class="contact_checkbox">
                 <p>RECEIVE WEEKLY NEWSLETTER</p>

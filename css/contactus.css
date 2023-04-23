@@ -8,16 +8,17 @@ body{
     margin-top: 30px;
 }
 .website_container > img{
-    width: 430px;
-    height: 590px;
+    width: 435px;
     margin-left: 15%;
+    margin-bottom: 30px;
 }
 
 .contactform{
-    width: 670px;
-    height: 570px;
+    width: 700px;
+    height: 100%;
     min-width: 500px;
     margin-right: 15%;
+    margin-bottom: 30px;
     background-color: white;
     padding-bottom: 20px;
 }
@@ -42,34 +43,14 @@ body{
 }
 
 #purpose{
-    width: 200px;
-    height: 23px;
-}
-
-#namebox{
-    display: flex;
-    margin-top:25px;
-}
-#namebox>input{
-    width: 86%;
-    height: 23px;
-}
-#namebox label{
-    margin-right: 10px;
-}
-#emailphone{
-    margin-top: 10px;
-}
-#emailphone>input{
-    margin-right: 10px;
-    margin-bottom: 15px;
-    width: 200px;
-    height: 23px;
+    width: 100%;
+    height: 30px;
+    border-radius: 12px;
 }
 
 .contact_checkbox{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .contact_checkbox > p{
     margin-right: 35px;
@@ -102,6 +83,135 @@ textarea{
 .contact_btn{
     margin: 25px 15%;
    min-width: 200px;
+}
+#p-info{
+    font-family: "Suisse Works Bold";
+    margin-top: 20px;
+}
+.icon1 {
+    margin-top: 20px;
+  }
+  .input-container {
+    height: 35px;
+    position: relative;
+    width: 100%;
+  }
+  .input {
+    border-radius: 12px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: white;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 80px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #7c7c7c;
+    left: 25px;
+    line-height: 5px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: black;
+  }
+  
+  fieldset {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin-top: 10px;
+  }
+  fieldset label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    display: block;
+    margin: 1em;
+  }
+  fieldset label > input {
+    display: none;
+  }
+  fieldset label span {
+    color: #000000;
+  }
+  fieldset label i {
+    display: inline-block;
+    width: 64px;
+    height: 30px;
+    border-radius: 20px;
+    vertical-align: middle;
+    transition: 0.25s 0.09s;
+    position: relative;
+    background: #ffddd7;
+  }
+  fieldset label i:after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 11px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    transition: 0.15s;
+  }
+  fieldset label > input:checked + i {
+    background: #FB5940;
+  }
+  
+  fieldset label > input:checked + i:after {
+    transform: translateX(25px);
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 50px;
+    margin: 0;
+  }
+  .contact_checkbox1{
+    display: flex; 
+    flex-direction: column; 
+  }
+.contact_checkbox1 > p{
+    margin-right: 35px;
+    margin-top: 20px;
+    font-family: "Suisse Works Bold";
 }
 /* button */
 #contact_btn_submit{
