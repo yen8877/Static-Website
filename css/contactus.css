@@ -271,6 +271,10 @@ textarea{
     body{
         background-color: white;
     }
+    .contactform_container{
+      margin: 10;
+      padding: 0;
+    }
     .website_container img{
         display: none;
     }
@@ -298,5 +302,12 @@ textarea{
     }
     .contact_checkbox input{
         margin: 5px;
+    }
+    .contact_btn{
+      margin: 0;
+    }
+    #contact_btn_submit, #contact_btn_reset{
+      justify-content: center;
+      width: 100%;
     }
   }

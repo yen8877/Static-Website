@@ -63,14 +63,14 @@ header{
 
 .nav_wrap1{
     display: flex;
+    margin-left: 150px;
 }
 .nav_wrap2{
     display: flex;
 }
-
 .logo img{
     width: 150px;
-    height: 110px;
+    height: 120px;
 }
 
 .navbar_menu{
@@ -163,7 +163,7 @@ header{
   
   .navbar .nav-container a {
     text-decoration: none;
-    color: #0e2431;
+    color: #334F42;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
@@ -209,7 +209,7 @@ header{
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: #334F42;
   }
   
   .nav-container .hamburger-lines .line1 {
@@ -252,8 +252,6 @@ header{
     position: absolute;
     top: 5px;
     left: 15px;
-    font-size: 1.2rem;
-    color: #0e2431;
   }
   
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
