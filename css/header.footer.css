@@ -138,6 +138,7 @@ header{
     width: 90%;
     margin: auto;
   }
+  /* navigation bar */
   .mobile-nav{
     display: none;
   }
@@ -244,13 +245,12 @@ header{
     font-size: 1.5rem;
     font-weight: 500;
   }
-  
+  /* logo location */
   .logo {
     position: absolute;
     top: 5px;
     left: 15px;
   }
-  
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
    
@@ -273,6 +273,7 @@ header{
   .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
   }
+  /* mobile toggle navigation bar */
   @media (max-width:960px){
     .mobile-nav{
       display: inline-block;
