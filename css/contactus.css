@@ -9,6 +9,7 @@ body{
     background-color: #FFFAF5;
 }
 
+/* contact information container */
 .website_container{
     display: flex;
     min-width: min-content;
@@ -45,16 +46,21 @@ body{
     font-weight: 600;
 }
 
+/* font */
 .contactform_container > div> label, .contactform_container > label{
     font-family: "Suisse Works Bold";
 }
+#email, #phone, #yesbox, #nobox{
+  font-family: 'Montserrat', sans-serif;
+}
 
+/* purpose */
 #purpose{
     width: 100%;
     height: 30px;
     border-radius: 12px;
 }
-
+/* checkbox */
 .contact_checkbox{
     display: flex;
     margin-top: 20px;
@@ -68,11 +74,7 @@ body{
     font-weight: 400;
     margin-right: 20px;
 }
-
-#email, #phone, #yesbox, #nobox{
-    font-family: 'Montserrat', sans-serif;
-}
-
+/* text area */
 #textcontainer{
     display: flex;
     margin-top: 25px;
@@ -87,10 +89,6 @@ textarea{
     resize: none;
 }
 
-.contact_btn{
-    margin: 25px 15%;
-   min-width: 200px;
-}
 #p-info{
     font-family: "Suisse Works Bold";
     margin-top: 20px;
@@ -220,9 +218,12 @@ textarea{
     margin-top: 20px;
     font-family: "Suisse Works Bold";
 }
+
 /* button */
 .contact_btn{
-    justify-content: center;
+  margin: 25px 15%;
+ min-width: 200px;
+ justify-content: center;
 }
 #contact_btn_submit{
     background-color: #FB5940;
@@ -239,6 +240,7 @@ textarea{
     height: 0%;
     width: 2px;
   }
+  /* button hover */
 #contact_btn_submit:hover {
     box-shadow:  1px 2px 3px 0 rgba(255,255,255,.5),
                 -1px -2px 3px 0 rgba(116, 125, 136, .5), 

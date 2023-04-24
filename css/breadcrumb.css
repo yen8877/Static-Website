@@ -8,33 +8,39 @@
 #breadcrumb_wrap {
     margin: 30px 80px 20px;
   }
-  
+  /* bread crumb list */
   .cd-breadcrumb li{
     display: inline-block;
     float: left;
     margin: 8px 0;
   }
+
+  /* separator between items */
   .cd-breadcrumb li::after{
     display: inline-block;
     content: '\00bb';
     margin: 2px;
   }
+    /* hide separator after the last item */
   .cd-breadcrumb li:last-of-type::after{
     display: none;
   }
+    /* single step */
   .cd-breadcrumb li > *{
     display: inline-block;
     font-size: 12px;
     font-weight: 500;
     color: rgb(142, 142, 142);
   }
+  /* selected step, no hover current page*/
   .cd-breadcrumb li.current > *{
     color: #FB5940;
   }
-.cd-breadcrumb a:hover{
+  /* steps already visited, hover color balck*/
+  .cd-breadcrumb a:hover{
     color: #000000;
   }
-
+  /* replace the default separator with a custom icon */
   .cd-breadcrumb.custom-separator li::after{
     content: '';
     height: 16px;

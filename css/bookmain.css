@@ -5,6 +5,7 @@
   Author: Han Yeeun
   ID: s3912055
   Acknowledgement: Acknowledge the resources that you use here. */
+
 main {
 	margin: 100px 12%;
 }
@@ -29,24 +30,25 @@ h3 {
 	float: left;
 }
 
+/* Book img, title */
 .book {
 	padding: 10px;
 	margin: 10px;
 	text-align: center;
 	width: 200px;
 }
-
 .book img {
 	width: 100%;
 	height: 280px;
 	object-fit: cover;
 }
-
 .book h5 {
 	margin-top: 0;
 	font-size: 15px;
     font-family: "Suisse Works Bold";
 }
+
+/* hover of the book title */
 .book h5:hover{
 	color: rgba(0, 0, 0, 0.466);
 }
